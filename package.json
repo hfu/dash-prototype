@@ -1,0 +1,23 @@
+{
+  "name": "dash-prototype",
+  "version": "1.0.0",
+  "description": "the first prototype of the dash series",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify main.js -o bundle.js",
+    "watch": "watchify main.js -o bundle.js --debug --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfu/dash-prototype.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/hfu/dash-prototype/issues"
+  },
+  "homepage": "https://github.com/hfu/dash-prototype#readme",
+  "dependencies": {}
+}
