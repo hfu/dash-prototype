@@ -156,7 +156,7 @@ module.exports = {
         v: {
           type: 'geojson',
           data: geojson,
-          attribution: 'COPYRIGHT ' + module.exports.attribution
+          attribution: module.exports.attribution
         }
       },
       layers: [{
@@ -195,7 +195,7 @@ module.exports = {
       bounds: [[tile02long(module.exports.margin), tile02lat(1 - module.exports.margin)], [tile02long(1 - module.exports.margin), tile02lat(module.exports.margin)]],
       hash: true,
       localIdengraphFontFamily: 'sans',
-      maxZoom: 4,
+      maxZoom: 3.99,
       renderWorldCopies: false
     });
     map.on('load', function () {// map.addControl(new mapboxgl.NavigationControl())

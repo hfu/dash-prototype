@@ -149,7 +149,7 @@ module.exports = {
         v: {
           type: 'geojson',
           data: geojson,
-          attribution: 'COPYRIGHT ' + module.exports.attribution
+          attribution: module.exports.attribution
         }
       },
       layers: [
@@ -237,7 +237,7 @@ module.exports = {
       ],
       hash: true,
       localIdengraphFontFamily: 'sans',
-      maxZoom: 4,
+      maxZoom: 3.99,
       renderWorldCopies: false
     })
     map.on('load', function () {
