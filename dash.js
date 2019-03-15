@@ -144,12 +144,12 @@ module.exports = {
 
     let style = {
       version: 8,
-      attribution: module.exports.attribution,
       glyphs: 'https://vectortiles.xyz/fonts/{fontstack}/{range}.pbf',
       sources: {
         v: {
           type: 'geojson',
-          data: geojson
+          data: geojson,
+          attribution: 'COPYRIGHT ' + module.exports.attribution
         }
       },
       layers: [
