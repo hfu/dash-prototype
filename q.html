@@ -15,7 +15,7 @@ body { margin: 0; top: 0; bottom: 0; width: 100%; }
 <body>
 <div id="map"></div>
 <script>
-params = document.location.href.split('?')[1].split('&').map(v => v.split('='))
+params = document.location.href.split('?')[1].split('#')[0].split('&').map(v => v.split('='))
   .reduce((acc, c) => { acc[c[0]] = c[1]; return acc }, {})
 
 console.log(params)
