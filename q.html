@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link rel="stylesheet" type="text/css" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css"/>
+<style>
+body { margin: 0; top: 0; bottom: 0; width: 100%; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js"></script>
+<script src="https://hfu.github.io/dash-prototype/bundle.js"></script>
+</head>
+<body>
+<div id="map"></div>
+<script>
+params = document.location.href.split('?')[1].split('&').map(v => v.split('=')).reduce((o, c) => {...o, [c[0]]: c[1]})
+console.log(params)
+
+/*
+map = dash.createMap({
+  title: '九州・沖縄地方',
+  table: [[40, 41, 42, 43, 44, 45, 46, 47], 1],
+  color: function(v) {
+    if (v == 1) {
+      return ['rgb', 254, 194, 64]
+    } else {
+      return ['rgb', 207, 207, 207]
+    }
+  }
+})
+*/
+</script>
+</body>
+</html>
