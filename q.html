@@ -15,22 +15,23 @@ body { margin: 0; top: 0; bottom: 0; width: 100%; }
 <body>
 <div id="map"></div>
 <script>
-params = document.location.href.split('?')[1].split('&').map(v => v.split('=')).reduce((o, c) => {...o, [c[0]]: c[1]})
+params = document.location.href.split('?')[1].split('&').map(v => v.split('='))
+  .reduce((acc, c) => { acc[c[0]] = c[1]; return acc }, {})
+
 console.log(params)
 
-/*
 map = dash.createMap({
-  title: '九州・沖縄地方',
-  table: [[40, 41, 42, 43, 44, 45, 46, 47], 1],
+  title: params.title,
+  table: [params.prefs.split(',', 1],
   color: function(v) {
     if (v == 1) {
-      return ['rgb', 254, 194, 64]
+      return params.color
     } else {
       return ['rgb', 207, 207, 207]
     }
   }
 })
-*/
+
 </script>
 </body>
 </html>
