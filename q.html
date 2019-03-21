@@ -22,7 +22,7 @@ console.log(params)
 
 map = dash.createMap({
   title: params.title,
-  table: [params.prefs.split(',', 1],
+  table: [params.prefs.split(','), 1],
   color: function(v) {
     if (v == 1) {
       return params.color
@@ -31,7 +31,6 @@ map = dash.createMap({
     }
   }
 })
-
 </script>
 </body>
 </html>
