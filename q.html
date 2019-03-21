@@ -21,7 +21,7 @@ params = document.location.href.split('?')[1].split('#')[0].split('&').map(v => 
 console.log(params)
 
 map = dash.createMap({
-  title: params.title,
+  title: decodeURIComponent(params.title),
   table: [params.prefs.split(',').map(v => parseInt(v)), 1],
   color: function(v) {
     if (v == 1) {
